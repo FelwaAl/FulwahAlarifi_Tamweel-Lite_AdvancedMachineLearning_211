@@ -212,6 +212,8 @@ The Tamweel Lite data is fully synthetic and was created for the course. It cont
 قارنت ثلاثة نماذج منفردة وثلاث طرق تجميع، واخترت الانحدار اللوجستي لأنه حقق أعلى AP (0.392) ولم يتجاوزه أي تجميع بفارق يفوق الانحراف بين الطيات (0.030). العتبة تلتقط 46.9% من حالات التعثر ضمن سعة 12% في كل فترة. لم تحسّن معايرة sigmoid الاحتمالات. في دفعة التحدي تجاوزت 330 حالة العتبة فاحتُفظ بأعلى 300 فقط. تحتاج فجوة المنطقة الغربية إلى مراجعة، والنتائج تعليمية على بيانات اصطناعية.
  
 ---
+## Training-program attribution
+This project was completed for the **Advanced Machine Learning Methods (SDA-DSC-211)** project, delivered by **SDAIA Academy via Learning Space** as a five-day, on-site, 30-hour program. Session: **October 2026**.
  
-*Completed for SDA-DSC-211 — Advanced Machine Learning Methods, SDAIA Academy.*
+Training-program reference: [SDAIA Academy on GitHub](https://github.com/SDAIAAcademy).
  
