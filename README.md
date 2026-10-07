@@ -213,7 +213,7 @@ The Tamweel Lite data is fully synthetic and was created for the course. It cont
  
 ---
 ## Training-program attribution
-This project was completed for the **Advanced Machine Learning Methods (SDA-DSC-211)** project, delivered by **SDAIA Academy via Learning Space** as a five-day, on-site, 30-hour program. Session: **October 2026**.
+This project was completed for the **Advanced Machine Learning Methods (SDA-DSC-211)** project, delivered by **SDAIA Academy via Learning Space** as a five-day, on-site, 20-hour program. Session: **October 2026**.
  
 Training-program reference: [SDAIA Academy on GitHub](https://github.com/SDAIAAcademy).
  
