@@ -1,0 +1,18 @@
+{
+  "problem_statement": "Estimate the probability that a synthetic Tamweel Lite applicant has a default event within 90 days after applying, using only the 22 features available at application time. The decision point is when the application is submitted. This is for teaching only and must not be used for real financing decisions.",
+  "candidate": "Logistic Regression",
+  "notes": {
+    "evidence": "On the 2,000-row comparison set, Logistic Regression had the highest ROC-AUC (0.821 vs 0.814 LightGBM and 0.812 XGBoost) and nearly the same AP (0.326 vs 0.334 for XGBoost). It trained in 0.06 s, about 5-7x faster than the boosting models. The boosting models did not show a clear advantage, so I chose the simpler baseline.",
+    "limitation": "This is one random stratified split with no confidence intervals, so differences of about 0.01 may be noise. 1,226 customers appear in both development and comparison, and the split ignores time order and target maturity, so these scores are likely optimistic. Calibration and decision cost were not evaluated.",
+    "next_test": "Re-evaluate all three models with customer-grouped and time-ordered validation (Day 2), using repeated splits or bootstrap intervals. If XGBoost's AP advantage stays consistent and grows under honest validation, I would switch to it."
+  },
+  "exit_answers": [
+    "With only about 7.9% positives, ROC-AUC can look strong because the false positive rate is divided by the large negative class. AP focuses on precision and recall for the rare defaults, so it shows how many flagged applicants are actually positive. Its random baseline is the prevalence (0.079), not 0.5.",
+    "If the comparison set were used to choose the tree count, the boosting models would be tuned on the same data used to score them. Their results would be optimistically biased, and the comparison would be unfair to Logistic Regression, which was not tuned on that set. The comparison set has to stay untouched to serve as an independent check."
+  ],
+  "checkpoint": {
+    "status": "READY_FOR_REVIEW",
+    "missing": [],
+    "automatic_grade": null
+  }
+}
