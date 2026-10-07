@@ -1,0 +1,13 @@
+{
+  "checks": {
+    "logistic": "PASS",
+    "xgboost": "PASS",
+    "lightgbm": "PASS",
+    "shap_margin_additivity": "PASS",
+    "sigmoid_calibration": "PASS",
+    "optuna": "PASS"
+  },
+  "seconds": 0.66,
+  "sample_rows": 300,
+  "purpose": "Software compatibility only; not project model results."
+}

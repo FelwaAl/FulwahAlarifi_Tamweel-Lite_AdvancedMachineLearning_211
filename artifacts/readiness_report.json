@@ -1,0 +1,20 @@
+{
+  "status": "READY",
+  "dataset_version": "tamweel-lite-1.0",
+  "course_revision": "fe0c0204e6076a7ac2139b7336485a097343fb8a",
+  "python": "3.13.16",
+  "elapsed_seconds": 197.42,
+  "data_checks": "PASS",
+  "compatibility_checks": {
+    "logistic": "PASS",
+    "xgboost": "PASS",
+    "lightgbm": "PASS",
+    "shap_margin_additivity": "PASS",
+    "sigmoid_calibration": "PASS",
+    "optuna": "PASS"
+  },
+  "self_check_answered": 6,
+  "self_check_correct": 6,
+  "self_check_is_graded": false,
+  "peak_process_memory_mib": 572.9
+}

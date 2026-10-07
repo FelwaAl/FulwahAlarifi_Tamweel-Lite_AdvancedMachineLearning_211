@@ -1,0 +1,19 @@
+{
+  "train": {
+    "rows": 10000,
+    "predictors": 22,
+    "missing_feature_values": 766,
+    "positive_rate": 0.0789
+  },
+  "dirty": {
+    "rows": 10000,
+    "predictors": 22,
+    "missing_feature_values": 766,
+    "positive_rate": 0.0789
+  },
+  "challenge": {
+    "rows": 2500,
+    "predictors": 22,
+    "missing_feature_values": 216
+  }
+}
